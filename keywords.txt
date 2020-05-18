@@ -1,0 +1,14 @@
+#######################################
+# Syntax Coloring Map For NodeRedTime
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+NodeRedTime		KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+serverTime		KEYWORD2
+syntheticTime	KEYWORD2
