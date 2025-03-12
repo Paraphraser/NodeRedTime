@@ -9,12 +9,12 @@
 #include <Arduino.h>
 #include <time.h>
 
-
-#if (ESP32)
+#ifdef ESP32
+#include <WiFi.h>
 #include <HTTPClient.h>
 #endif
 
-#if (ESP8266)
+#ifdef ESP8266
 #include <WiFiClient.h>
 #include <ESP8266HTTPClient.h>
 #endif

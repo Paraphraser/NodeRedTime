@@ -17,11 +17,11 @@
 
 #include <Arduino.h>
 
-#if (ESP8266)
+#ifdef ESP8266
     #include <ESP8266WiFi.h>
 #endif
 
-#if (ESP32)
+#ifdef ESP32
     #include <WiFi.h>
 #endif
 
@@ -186,7 +186,7 @@ void setup() {
 
     Serial.begin(74880); while (!Serial); Serial.println();
 
-    #if (ESP8266)
+    #ifdef ESP8266
     // ESP8266 can be in weird state after IDE code upload
     // This cures the problem (providing GPIO16 is tied to RST)
     if (ESP.getResetInfoPtr()->reason == REASON_EXT_SYS_RST) {

@@ -16,7 +16,7 @@
  *  Created 2019-12-06. BSD License.
  */
 
-#if (!ESP8266)
+#ifndef ESP8266
     #error "Sketch only tested with ESP8266 - will need adaptation to work with ESP32"
 #endif
 
